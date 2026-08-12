@@ -1,0 +1,55 @@
+[17:49:39.218] === START ===
+[17:49:39.218] Build: Aug 12 2026 02:45:13
+[17:49:40.243] [CFG] Gateway mode selected: automated refresh
+[17:49:40.245] [GUI] F1/F2 hotkey loop active
+[17:49:40.246] [SRV] server.pfx not found â€” generating self-signed cert
+[17:49:40.252] [SRV] Saved server.pfx for reuse
+[17:49:40.252] [SRV] Self-signed cert created
+[17:49:40.253] [SRV] TLS listening 127.0.0.1:51820
+[17:49:43.514] Created simulated Vanguard mutex.
+[17:49:43.514] [PIPE] Waiting for client...
+[17:49:43.514] Created simulated Vanguard shared memory (FileMapping).
+[17:50:05.362] [PIPE] Client connected
+[17:50:05.362] [PIPE] Waiting for client...
+[17:50:05.365] [PIPE] current pipe handle registered
+[17:50:05.464] [PIPE] initial 36-byte challenge handshake written=36/36
+[17:50:05.464] [PIPE] packet#1 103 bytes (0x64)
+[17:50:05.464] [PIPE][0x64] AUTH_REQUEST bytes=103 raw=64 00 00 00 67 00 00 00 02 00 00 00 00 00 00 00 
+[17:50:05.464] [PIPE][0x64] scanning for JWT inside auth request...
+[17:50:05.464] [PIPE] No JWT found in this scan.
+[17:50:05.464] [PIPE][0x64] JWT not yet available, waiting 2s...
+[17:50:07.478] [PIPE][0x64] jwt=EMPTY puuid=EMPTY
+[17:50:07.478] [AUTH_REQ] 0x64 new session request â€” puuid=
+[17:50:07.574] [PIPE][0x64] AUTH_REQUEST response written=1/1
+[17:50:07.574] [PIPE] AUTH_REQUEST (0x64) handled, response sent
+[17:50:07.574] [PIPE] packet#2 1242 bytes (0x65)
+[17:50:07.574] [PIPE][COMPAT] struct type=4 magic=0x65 bytes=1242
+[17:50:07.574] [PIPE][COMPAT] type 4 scanning for JWT/SID
+[17:50:07.574] [PIPE] JWT candidates found=1
+[17:50:07.574] [PIPE] puuid=0202f9c9 sid=92612790 pid=5260
+[17:50:07.574] [PIPE] NEW AUTH_TOKEN captured (length: 1098)
+[17:50:07.574] [PIPE] token saved -- auto gateway send enabled
+[17:50:07.574] [PIPE][COMPAT] type 4 auth ACK uuid=0202f9c9-ff82-5700-b2db-a23853eb7abd reply_magic=0x66
+[17:50:07.674] [PIPE][COMPAT] type 4 reply written=60/60
+[17:50:07.976] [PIPE][COMPAT] injected type 9 session-auth written=40/40
+[17:50:10.595] [CLI] TLS connect failed
+[17:50:15.367] [PIPE] packet#3 40 bytes (0x3)
+[17:50:15.416] [PIPE][HB] vgk ping ack #1 written=40/40
+[17:50:18.088] [PIPE] packet#4 68 bytes (0x67)
+[17:50:18.088] [PIPE][COMPAT] struct type=1 magic=0x67 bytes=68
+[17:50:18.088] [PIPE][COMPAT] type 1 echo ACK magic=0x6a
+[17:50:18.131] [PIPE][COMPAT] type 1 reply written=68/68
+[17:50:25.421] [PIPE] packet#5 40 bytes (0x3)
+[17:50:25.470] [PIPE][HB] vgk ping ack #2 written=40/40
+[17:50:35.475] [PIPE] packet#6 40 bytes (0x3)
+[17:50:35.523] [PIPE][HB] vgk ping ack #3 written=40/40
+[17:50:45.527] [PIPE] packet#7 40 bytes (0x3)
+[17:50:45.576] [PIPE][HB] vgk ping ack #4 written=40/40
+[17:50:55.580] [PIPE] packet#8 40 bytes (0x3)
+[17:50:55.625] [PIPE][HB] vgk ping ack #5 written=40/40
+[17:51:05.792] [PIPE] packet#9 40 bytes (0x3)
+[17:51:05.813] [PIPE][HB] vgk ping ack #6 written=40/40
+[17:51:15.819] [PIPE] packet#10 40 bytes (0x3)
+[17:51:15.862] [PIPE][HB] vgk ping ack #7 written=40/40
+[17:51:25.868] [PIPE] packet#11 40 bytes (0x3)
+[17:51:25.917] [PIPE][HB] vgk ping ack #8 written=40/40
