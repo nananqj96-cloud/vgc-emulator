@@ -65,7 +65,7 @@ constexpr int           EMERGENCY_HB_MS = 12000;
 constexpr int           MAX_HB_BURST = 3;
 constexpr int           GATEWAY_REAUTH_INTERVAL_SEC = 45 * 60;
 
-constexpr const char* SERVER_HOST = "";
+constexpr const char* SERVER_HOST = "127.0.0.1";
 constexpr const char* AUTH_KEY = "";
 constexpr const wchar_t* GW_PATH = L"/vanguard/v1/gateway";
 constexpr INTERNET_PORT  GW_PORT = 8443;
