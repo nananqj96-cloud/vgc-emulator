@@ -354,7 +354,7 @@ static std::vector<uint8_t> EncodeAuthRequest(
     pb_embedded(buf, 2, EncodeSubProto(1, 2, "10.0.19045"));
     pb_string(buf, 4, game_token);
     pb_string(buf, 5, client_pubkey.empty() ? std::string(VGW_CLIENT_PUBKEY) : client_pubkey);
-    auto vgver = EncodeVgVersion(1, 18, 5, 11);
+    auto vgver = EncodeVgVersion(1, 19, 1, 18);
     pb_embedded(buf, 6, vgver);
     pb_embedded(buf, 7, vgver);
     pb_string(buf, 8, game_id);
