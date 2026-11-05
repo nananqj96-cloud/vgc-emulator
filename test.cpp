@@ -69,7 +69,7 @@ constexpr const char* SERVER_HOST = "127.0.0.1";
 constexpr const char* AUTH_KEY = "";
 constexpr const wchar_t* GW_PATH = L"/vanguard/v1/gateway";
 constexpr INTERNET_PORT  GW_PORT = 8443;
-constexpr const wchar_t* VGC_UA = L"vanguard/1.18.5-11+20260730.010201";
+constexpr const wchar_t* VGC_UA = L"vanguard/1.19.1-18+20261001.143443";
 constexpr const wchar_t* PIPE_NAME = L"\\\\.\\pipe\\933823D3-C77B-4BAE-89D7-A92B567236BC";
 
 
@@ -2668,7 +2668,7 @@ static bool PostToGateway(const std::vector<uint8_t>& envelope,
     WinHttpSetOption(hR, WINHTTP_OPTION_SECURITY_FLAGS, &ssl, sizeof(ssl));
 
     std::wstring headers;
-    headers += L"User-Agent: vanguard/1.18.5-11+20260730.010201\r\n";
+    headers += L"User-Agent: vanguard/1.19.1-18+20261001.143443\r\n";;
     headers += L"Content-Type: application/x-protobuf\r\n";
     if (!puuid.empty()) { std::wstring w(puuid.begin(), puuid.end()); headers += L"X-VG-2: " + w + L"\r\n"; }
     headers += L"X-VG-1: " + std::to_wstring(vg_type) + L"\r\nX-VG-3: 1\r\nAccept: */*";
