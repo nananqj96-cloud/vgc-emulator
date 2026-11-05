@@ -1,0 +1,22 @@
+name: build
+on: [push, workflow_dispatch]
+jobs:
+  win:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gen hwid pool
+        run: python "gen (1).py" 5 output.txt
+      - uses: microsoft/setup-msbuild@v2
+      - name: Compile
+        run: msbuild "test (1).vcxproj" /p:Configuration=Release /p:Platform=x64 /m
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vgc2
+          path: |
+            x64/Release/*.exe
+            output.txt
+          if-no-files-found: error
